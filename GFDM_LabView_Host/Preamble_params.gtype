@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="4B464DD0A697E3938A32DA6B09928E16" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@56602e26f39546b8b1409b4e78e18f19" Friends="" Id="1" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Preamble_params" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@56602e26f39546b8b1409b4e78e18f19" Id="34" Name="Preamble_params">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>0</Field1>
+					<Field2>0</Field2>
+					<Field3>0</Field3>
+					<Field4>0</Field4>
+					<Field5>null</Field5>
+					<Field6>null</Field6>
+					<Field7>null</Field7>
+					<Field8>0</Field8>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="10" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="11" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,DefaultTarget,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="12" ModelDefinitionType="DefaultTarget" Name="Preamble_params\.gtype" NameTracksFileName="True">
+			<DefaultTarget />
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.PanelCommon.SourceModel.ControlDefinition,EmbeddedReference" Id="13" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Indicator" Id="14" xmlns="http://www.ni.com/MocCommon">
+					<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@56602e26f39546b8b1409b4e78e18f19" Height="[float]439" Id="15" Label="[UIModel]33" Left="[float]118" Top="[float]71" Value="{DataItemBinding Id=34}" Width="[float]150" xmlns="http://www.ni.com/PanelCommon">
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="16" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]23" Left="[float]2" MinHeight="[float]22" Top="[float]168" Value="{ClusterBinding FieldName=Ncp}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="17" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]24" Left="[float]2" MinHeight="[float]22" Top="[float]222" Value="{ClusterBinding FieldName=Ncs}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="18" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]25" Left="[float]2" MinHeight="[float]22" Top="[float]118" Value="{ClusterBinding FieldName=K}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="19" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]26" Left="[float]2" MinHeight="[float]22" Top="[float]68" Value="{ClusterBinding FieldName=M}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<ArrayViewer ArrayElement="[UIModel]30" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]52" Id="20" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" Label="[UIModel]27" Left="[float]2" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]276" Value="{ClusterBinding FieldName=pre64}" Width="[float]130">
+							<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+							<NumericText BaseName="[string]Numeric" Height="[float]22" Id="30" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[ComplexDouble]1 + 0i" Left="[float]53" MinHeight="[float]22" Name="[string]Child" Top="[float]7" Value="[ComplexDouble]-2.9282132274488504E-15 - 1.5987211554602254E-14i" ValueFormatter="[string]LV:G6" ValueType="[Type]ComplexDouble" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						</ArrayViewer>
+						<ArrayViewer ArrayElement="[UIModel]31" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="21" IndexVisibility="[Visibility]Visible" Label="[UIModel]28" Left="[float]2" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]330" Value="{ClusterBinding FieldName=pref64}" Width="[float]130">
+							<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+							<NumericText BaseName="[string]Numeric" Height="[float]22" Id="31" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[ComplexDouble]1 + 0i" Left="[float]53" MinHeight="[float]22" Name="[string]Child" Top="[float]7" Value="[ComplexDouble]1.9999999999999998 + 1.1102230246251565E-16i" ValueFormatter="[string]LV:G6" ValueType="[Type]ComplexDouble" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						</ArrayViewer>
+						<ArrayViewer ArrayElement="[UIModel]32" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="22" IndexVisibility="[Visibility]Visible" Label="[UIModel]29" Left="[float]2" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]393" Value="{ClusterBinding FieldName=pre_cp}" Width="[float]130">
+							<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+							<NumericText BaseName="[string]Numeric" Height="[float]22" Id="32" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[ComplexDouble]1 + 0i" Left="[float]53" MinHeight="[float]22" Name="[string]Child" Top="[float]7" Value="[ComplexDouble]0 + 0i" ValueFormatter="[string]LV:G6" ValueType="[Type]ComplexDouble" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						</ArrayViewer>
+						<Label Height="[float]16" Id="23" LabelOwner="[UIModel]16" Left="[float]2" Text="[string]Ncp" Top="[float]145" Width="[float]22" />
+						<Label Height="[float]16" Id="24" LabelOwner="[UIModel]17" Left="[float]2" Text="[string]Ncs" Top="[float]199" Width="[float]20" />
+						<Label Height="[float]16" Id="25" LabelOwner="[UIModel]18" Left="[float]2" Text="[string]K" Top="[float]95" />
+						<Label Height="[float]16" Id="26" LabelOwner="[UIModel]19" Left="[float]2" Text="[string]M" Top="[float]45" Width="[float]11" />
+						<Label Height="[float]16" Id="27" LabelOwner="[UIModel]20" Left="[float]2" Text="[string]pre64" Top="[float]253" Width="[float]31" />
+						<Label Height="[float]16" Id="28" LabelOwner="[UIModel]21" Left="[float]2" Text="[string]pref64" Top="[float]307" Width="[float]35" />
+						<Label Height="[float]16" Id="29" LabelOwner="[UIModel]22" Left="[float]2" Text="[string]pre_cp" Top="[float]370" Width="[float]36" />
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="37" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]38" Left="[float]0" MinHeight="[float]22" Top="[float]23" Value="{ClusterBinding FieldName=N}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="38" LabelOwner="[UIModel]37" Left="[float]0" Text="[string]N" Top="[float]0" />
+					</Cluster>
+					<Label Height="[float]16" Id="33" LabelOwner="[UIModel]15" Left="[float]118" Text="[string]Preamble_params" Top="[float]48" Width="[float]94" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="56602e26f39546b8b1409b4e78e18f19">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Ncp" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Ncs" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="K" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="M" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="pre64">
+						<DataType>
+							<VariableArray DereferenceType="ComplexDouble" />
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="pref64">
+						<DataType>
+							<VariableArray DereferenceType="ComplexDouble" />
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="pre_cp">
+						<DataType>
+							<VariableArray DereferenceType="ComplexDouble" />
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="N" DataType="Int32" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

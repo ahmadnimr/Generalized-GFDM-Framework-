@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="5B4653B99162D2D21871046EB05C3E9D" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@b5bc63d96f7c4970a14c64aa16110646" Friends="" Id="1" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Frame_out" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@b5bc63d96f7c4970a14c64aa16110646" Id="27" Name="Frame_out">
+			<p.DefaultValue>0_0_0_0_0_0_0_0_</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="10" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="11" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,DefaultTarget,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="12" ModelDefinitionType="DefaultTarget" Name="Frame_out\.gtype" NameTracksFileName="True">
+			<DefaultTarget />
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.PanelCommon.SourceModel.ControlDefinition,EmbeddedReference" Id="13" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Indicator" Id="14" xmlns="http://www.ni.com/MocCommon">
+					<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@b5bc63d96f7c4970a14c64aa16110646" Height="[float]402" Id="15" Label="[UIModel]26" Left="[float]190" Top="[float]177" Value="{DataItemBinding Id=27}" Width="[float]90" xmlns="http://www.ni.com/PanelCommon">
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="16" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]21" Left="[float]2" MinHeight="[float]22" Top="[float]370" Value="{ClusterBinding FieldName=NB}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="17" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]22" Left="[float]0" MinHeight="[float]22" Top="[float]73" Value="{ClusterBinding FieldName=Nb_padd}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="18" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]23" Left="[float]0" MinHeight="[float]22" Top="[float]125" Value="{ClusterBinding FieldName=Nenc_padd}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="19" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]24" Left="[float]1" MinHeight="[float]22" Top="[float]179" Value="{ClusterBinding FieldName=Ns_padd}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="20" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]25" Left="[float]2" MinHeight="[float]22" Top="[float]322" Value="{ClusterBinding FieldName=Ns}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="21" LabelOwner="[UIModel]16" Left="[float]2" Text="[string]NB" Top="[float]347" Width="[float]16" />
+						<Label Height="[float]16" Id="22" LabelOwner="[UIModel]17" Left="[float]0" Text="[string]Nb_padd" Top="[float]50" Width="[float]49" />
+						<Label Height="[float]16" Id="23" LabelOwner="[UIModel]18" Left="[float]0" Text="[string]Nenc_padd" Top="[float]102" Width="[float]60" />
+						<Label Height="[float]16" Id="24" LabelOwner="[UIModel]19" Left="[float]1" Text="[string]Ns_padd" Top="[float]156" Width="[float]47" />
+						<Label Height="[float]16" Id="25" LabelOwner="[UIModel]20" Left="[float]2" Text="[string]Ns" Top="[float]299" Width="[float]15" />
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="30" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[byte]1" Label="[UIModel]31" Left="[float]2" MinHeight="[float]22" Top="[float]23" Value="{ClusterBinding FieldName=m}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt8" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="31" LabelOwner="[UIModel]30" Left="[float]2" Text="[string]m" Top="[float]0" Width="[float]11" />
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="34" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]36" Left="[float]1" MinHeight="[float]22" Top="[float]275" Value="{ClusterBinding FieldName=Nenc}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="36" LabelOwner="[UIModel]34" Left="[float]1" Text="[string]Nenc" Top="[float]252" Width="[float]28" />
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="33" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]35" Left="[float]2" MinHeight="[float]22" Top="[float]229" Value="{ClusterBinding FieldName=Nbit}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="35" LabelOwner="[UIModel]33" Left="[float]2" Text="[string]Nbit" Top="[float]206" Width="[float]24" />
+					</Cluster>
+					<Label Height="[float]16" Id="26" LabelOwner="[UIModel]15" Left="[float]190" Text="[string]Frame_out" Top="[float]154" Width="[float]56" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="b5bc63d96f7c4970a14c64aa16110646">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="NB" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Nb_padd" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Nenc_padd" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Ns_padd" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Ns" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="m" DataType="UInt8" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Nenc" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Nbit" DataType="Int32" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="6247644A5D1C800024B56F18562ADCF1" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]GetType" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="10" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<BlockDiagram Id="13">
+			<Literal Bounds="230 260 85.77333 15" DataType="@39e0976d0ebc469ea958825a74dfc925" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="15" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+					<TypeDefinitionTarget TargetName="Type\.gtype" />
+				</p.TypeDefinitionTargets>
+				<EnumBehavior Id="16" />
+			</Literal>
+			<CaseStructure Bounds="340 170 230 225" DataType="@39e0976d0ebc469ea958825a74dfc925" Default="18" Id="17" Selected="18" UserSelectorBounds="42 0 146 17">
+				<CaseStructure.Case Bounds="5 5 220 215" Id="18" Pattern="&quot;uint8&quot;, Default" />
+				<CaseStructure.Case Bounds="5 5 220 215" Id="19" Pattern="&quot;uint16&quot;" />
+				<CaseStructure.Case Bounds="5 5 220 215" Id="22" Pattern="&quot;uint32&quot;" />
+				<CaseStructure.Case Bounds="5 5 220 215" Id="23" Pattern="&quot;int8&quot;" />
+				<CaseStructure.Case Bounds="5 5 220 215" Id="24" Pattern="&quot;int16&quot;" />
+				<CaseStructure.Case Bounds="5 5 220 215" Id="25" Pattern="&quot;int32&quot;" />
+				<CaseStructure.Case Bounds="5 5 220 215" Id="26" Pattern="&quot;bool&quot;" />
+				<CaseStructure.Case Bounds="5 5 220 215" Id="27" Pattern="&quot;DBL&quot;" />
+				<CaseStructure.Case Bounds="5 5 220 215" Id="28" Pattern="&quot;CDBL&quot;" />
+				<CaseStructure.Selector Bounds="-4 40 13 10" Docking="Left" Id="20" Terminals="17=21, 18, 19, 22, 23, 24, 25, 26, 27, 28" />
+			</CaseStructure>
+			<Wire Id="21" Joints="N(15:Out) h(5) v(-50) N(20:17)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="39e0976d0ebc469ea958825a74dfc925">
+			<Typedef TypedefName="Type.gtype" UnderlyingType="@d97adc3c8cdd4cd386190226628d6a20" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="d97adc3c8cdd4cd386190226628d6a20">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="uint8" />
+					<EnumerationMember Value="1" Name="uint16" />
+					<EnumerationMember Value="2" Name="uint32" />
+					<EnumerationMember Value="3" Name="int8" />
+					<EnumerationMember Value="4" Name="int16" />
+					<EnumerationMember Value="5" Name="int32" />
+					<EnumerationMember Value="6" Name="bool" />
+					<EnumerationMember Value="7" Name="DBL" />
+					<EnumerationMember Value="8" Name="CDBL" />
+				</Members>
+				<DataType>
+					<UInt16 />
+				</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

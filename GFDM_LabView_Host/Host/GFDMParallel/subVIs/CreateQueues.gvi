@@ -1,0 +1,1049 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="45888C32FB1809A4CCFE415FC3A19231" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]CreateQueues" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="10" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 65" Parameter="87" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 35" Parameter="193" />
+			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 50" Parameter="238" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 65" Parameter="129" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
+			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]165" Id="88" Label="[UIModel]95" Left="[float]316" Top="[float]174" Value="{DataItemBinding Id=87}" Width="[float]138" p4:ControlDefinitionChecksum="zmhsRUGWDTf2PX9vKcqFsw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Error\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]17" Id="89" Label="[UIModel]90" Left="[float]5" MinHeight="[float]16" MinWidth="[float]16" Top="[float]25" Value="{ClusterBinding FieldName=status}" Width="[float]19" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="90" LabelOwner="[UIModel]89" Left="[float]5" Text="[string]status" Top="[float]5" Width="[float]32" />
+				<NumericText Height="[float]22" Id="91" Label="[UIModel]92" Left="[float]50" MinHeight="[float]22" RadixVisibility="[SMVisibility]Visible" Top="[float]25" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]75" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="92" LabelOwner="[UIModel]91" Left="[float]50" Text="[string]code" Top="[float]5" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]80" Id="93" Label="[UIModel]94" Left="[float]5" Text="{ClusterBinding FieldName=source}" Top="[float]72" Width="[float]120" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="94" LabelOwner="[UIModel]93" Left="[float]5" Text="[string]source" Top="[float]52" Width="[float]35" />
+			</Cluster>
+			<Label Height="[float]16" Id="95" LabelOwner="[UIModel]88" Left="[float]316" Text="[string]error in" Top="[float]151" Width="[float]26" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]165" Id="130" Label="[UIModel]137" Left="[float]316" Top="[float]174" Value="{DataItemBinding Id=129}" Width="[float]138" p4:ControlDefinitionChecksum="zmhsRUGWDTf2PX9vKcqFsw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Error\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]17" Id="131" IsReadOnly="[bool]True" Label="[UIModel]132" Left="[float]5" MinHeight="[float]16" MinWidth="[float]16" Top="[float]25" Value="{ClusterBinding FieldName=status}" Width="[float]19" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="132" LabelOwner="[UIModel]131" Left="[float]5" Text="[string]status" Top="[float]5" Width="[float]32" />
+				<NumericText Height="[float]22" Id="133" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]134" Left="[float]50" MinHeight="[float]22" RadixVisibility="[SMVisibility]Visible" Top="[float]25" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]75" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="134" LabelOwner="[UIModel]133" Left="[float]50" Text="[string]code" Top="[float]5" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]80" Id="135" IsReadOnly="[bool]True" Label="[UIModel]136" Left="[float]5" Text="{ClusterBinding FieldName=source}" Top="[float]72" Width="[float]120" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="136" LabelOwner="[UIModel]135" Left="[float]5" Text="[string]source" Top="[float]52" Width="[float]35" />
+			</Cluster>
+			<Label Height="[float]16" Id="137" LabelOwner="[UIModel]130" Left="[float]316" Text="[string]error out" Top="[float]151" Width="[float]26" xmlns="http://www.ni.com/PanelCommon" />
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="13">
+			<ObtainQueue Bounds="365 460 40 40" Id="15" />
+			<Literal Bounds="247.5 460 67 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="16" Label="17" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>"tx.data "</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<NodeLabel AttachedTo="16" Bounds="247.5 460 0 0" Id="17" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<Wire Id="18" Joints="N(16:Out) N(15:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="230 490 39.5 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="19" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<Wire Id="20" Joints="N(19:Out) h(40.5) v(5) h(45) v(-25) B(4) N(15:element data type) B(4) v(-25) h(-75) v(-45) N(539:element data type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="315 480 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="21" Label="22" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<NodeLabel AttachedTo="21" Bounds="315 480 0 0" Id="22" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>create if not found?</p.Text>
+			</NodeLabel>
+			<Wire Id="23" Joints="N(21:Out) h(4) B(1) N(15:create if not found?) B(1) v(-50) h(-10) v(-20) N(539:create if not found?)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ObtainQueue Bounds="940 455 40 40" Id="24" />
+			<Literal Bounds="833.5 455 56 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="25" Label="31" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>rx.dat</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<Wire Id="26" Joints="N(25:Out) N(24:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="805 485 39.5 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="27" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<Wire Id="28" Joints="N(27:Out) h(40.5) v(-20) N(24:element data type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="890 475 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="29" Label="32" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<Wire Id="30" Joints="N(29:Out) h(7) B(1) N(24:create if not found?) B(1) v(-75) N(500:create if not found?)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="25" Bounds="833.5 455 0 0" Id="31" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="29" Bounds="890 475 0 0" Id="32" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>create if not found?</p.Text>
+			</NodeLabel>
+			<ObtainQueue Bounds="365 595 40 40" Id="33" />
+			<Literal Bounds="251.5 595 63 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="34" Label="40" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>tx.qam</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<Wire Id="35" Joints="N(34:Out) N(33:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="214.5 625 55 16" DataType="ComplexDouble" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="36" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x0;0x0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<Wire Id="37" Joints="N(36:Out) h(40.5) v(-20) N(33:element data type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="315 615 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="38" Label="41" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<Wire Id="39" Joints="N(38:Out) N(33:create if not found?)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="34" Bounds="251.5 595 0 0" Id="40" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="38" Bounds="315 615 0 0" Id="41" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>create if not found?</p.Text>
+			</NodeLabel>
+			<ObtainQueue Bounds="370 685 40 40" Id="42" />
+			<Literal Bounds="237.5 685 82 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="43" Label="49" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>"tx.sample "</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<Wire Id="44" Joints="N(43:Out) N(42:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="219.5 715 55 16" DataType="ComplexDouble" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="45" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x0;0x0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<Wire Id="46" Joints="N(45:Out) h(35.5) B(1) h(5) v(-20) N(42:element data type) B(1) v(55) B(5) N(393:element data type) B(5) v(70) N(395:element data type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="320 705 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="47" Label="50" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<Wire Id="48" Joints="N(47:Out) h(5) B(1) N(42:create if not found?) B(1) v(75) B(3) N(393:create if not found?) B(3) v(70) N(395:create if not found?)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="43" Bounds="237.5 685 0 0" Id="49" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="47" Bounds="320 705 0 0" Id="50" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>create if not found?</p.Text>
+			</NodeLabel>
+			<ObtainQueue Bounds="935 595 40 40" Id="51" />
+			<Literal Bounds="821.5 595 63 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="52" Label="65" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>rx.qam</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<Wire Id="53" Joints="N(52:Out) N(51:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="784.5 625 55 16" DataType="ComplexDouble" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="54" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x0;0x0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<Wire Id="55" Joints="N(54:Out) h(40.5) v(-20) N(51:element data type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="885 615 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="56" Label="66" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<Wire Id="57" Joints="N(56:Out) N(51:create if not found?)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ObtainQueue Bounds="940 685 40 40" Id="58" />
+			<Literal Bounds="811.5 685 78 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="59" Label="67" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>rx.sample</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<Wire Id="60" Joints="N(59:Out) N(58:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="789.5 715 55 16" DataType="ComplexDouble" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="61" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x0;0x0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<Wire Id="62" Joints="N(61:Out) h(40.5) v(-20) N(58:element data type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="890 705 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="63" Label="68" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<Wire Id="64" Joints="N(63:Out) N(58:create if not found?)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="52" Bounds="821.5 595 0 0" Id="65" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="56" Bounds="885 615 0 0" Id="66" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>create if not found?</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="59" Bounds="811.5 685 0 0" Id="67" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="63" Bounds="890 705 0 0" Id="68" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>create if not found?</p.Text>
+			</NodeLabel>
+			<ObtainQueue Bounds="940 770 40 40" Id="69" />
+			<Literal Bounds="825.5 770 64 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="70" Label="76" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>rx.sync</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<Wire Id="71" Joints="N(70:Out) N(69:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="789.5 800 55 16" DataType="ComplexDouble" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="72" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x0;0x0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<Wire Id="73" Joints="N(72:Out) h(40.5) v(-20) N(69:element data type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="890 790 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="74" Label="77" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<Wire Id="75" Joints="N(74:Out) N(69:create if not found?)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="70" Bounds="825.5 770 0 0" Id="76" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="74" Bounds="890 790 0 0" Id="77" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>create if not found?</p.Text>
+			</NodeLabel>
+			<ObtainQueue Bounds="940 845 40 40" Id="78" />
+			<Literal Bounds="832.5 845 57 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="79" Label="85" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>rx.pre</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<Wire Id="80" Joints="N(79:Out) N(78:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="789.5 875 55 16" DataType="ComplexDouble" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="81" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x0;0x0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<Wire Id="82" Joints="N(81:Out) h(40.5) v(-20) N(78:element data type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="890 865 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="83" Label="86" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<Wire Id="84" Joints="N(83:Out) N(78:create if not found?)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="79" Bounds="832.5 845 0 0" Id="85" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="83" Bounds="890 865 0 0" Id="86" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>create if not found?</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="105 525 40 15" DataItem="87" Id="97" Label="98" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="97" Bounds="58 525 42 14" Id="98" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>error in</p.Text>
+			</NodeLabel>
+			<Wire Id="99" Joints="N(97:Value) h(204) B(1) h(11) B(2) h(555) B(3) h(15) v(-40) B(5) h(-10) v(-75) N(500:error in) B(5) N(24:error in) B(3) v(100) B(10) N(51:error in) B(10) v(90) B(12) N(58:error in) B(12) v(85) B(14) N(69:error in) B(14) v(75) B(16) N(78:error in) B(16) v(40) h(20) v(75) h(10) B(21) N(216:error in) B(21) v(100) B(23) N(418:error in) B(23) v(115) B(25) N(425:error in) B(25) v(10) h(20) v(115) N(437:error in) B(2) v(-35) N(15:error in) B(2) v(100) B(33) N(33:error in) B(33) v(90) B(35) N(42:error in) B(35) v(75) B(37) N(393:error in) B(37) v(70) N(395:error in) B(1) v(-59) h(-11) v(-46) N(539:error in)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MergeErrors Bounds="1285 140 30 110" Id="107" Terminals="error out=141, c0t0v=111, c1t0v=124, c2t0v=125, c3t0v=126, c4t0v=127, c5t0v=128, c6t0v=225, c7t0v=449, c8t0v=450, c9t0v=451, c10t0v=508" VerticalChunkCount="11" />
+			<MergeErrors Bounds="495 140 30 50" Id="109" Terminals="error out=111, c0t0v=110, c1t0v=122, c2t0v=123, c3t0v=409, c4t0v=410" VerticalChunkCount="5" />
+			<Wire Id="110" Joints="N(15:error out) h(10) v(-350) N(109:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="111" Joints="N(109:error out) N(107:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="122" Joints="N(33:error out) h(55) v(-475) N(109:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="123" Joints="N(42:error out) h(60) v(-555) N(109:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="124" Joints="N(24:error out) h(60) v(-335) N(107:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="125" Joints="N(51:error out) h(85) v(-465) N(107:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="126" Joints="N(58:error out) h(95) v(-545) N(107:c3t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="127" Joints="N(69:error out) h(110) v(-620) N(107:c4t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="128" Joints="N(78:error out) h(125) v(-685) N(107:c5t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1415 140 40 15" DataItem="129" Id="139" Label="140" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="139" Bounds="1460 140 50 14" Id="140" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>error out</p.Text>
+			</NodeLabel>
+			<Wire Id="141" Joints="N(107:error out) N(139:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="905 65 40 15" DataItem="193" Id="194" Label="197" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@c79d711b66bd47fe995e2b6325a4eff6" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="194" Bounds="950 65 53 14" Id="197" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>TX.queue</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="525" Bounds="147 35 0 0" Id="205" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>TX.queue</p.Text>
+			</NodeLabel>
+			<PropertyNode Bounds="745 60 127 110" HasErrorTerminals="False" Id="208" InstanceDataType="@c79d711b66bd47fe995e2b6325a4eff6" Mode="InstanceProperties" Template="List">
+				<PropertyItemTerminal Action="Write" DataType="@59d1bea90cf5435ea68a497abf441b4c" Hotspot="0 15" Id="c0t0v" Path="data" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Hotspot="0 30" Id="c1t0v" Path="qam" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Hotspot="0 45" Id="c2t0v" Path="samples" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Hotspot="0 60" Id="c3t0v" Path="qam debug" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Hotspot="0 75" Id="c4t0v" Path="samples debug" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@59d1bea90cf5435ea68a497abf441b4c" Hotspot="0 90" Id="c5t0v" Path="data debug" Usage="Required" />
+			</PropertyNode>
+			<Wire Id="209" Joints="N(525:Out) h(271) v(25) N(208:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="210" Joints="N(208:instance out) h(28) v(5) N(194:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="211" Joints="N(15:queue out) h(5) v(-390) N(208:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="212" Joints="N(33:queue out) h(15) v(-510) N(208:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ObtainQueue Bounds="955 960 40 40" Id="216" />
+			<Literal Bounds="853.5 960 51 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="217" Label="223" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>rx.ce</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<Wire Id="218" Joints="N(217:Out) N(216:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="804.5 990 55 16" DataType="ComplexDouble" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="219" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x0;0x0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<Wire Id="220" Joints="N(219:Out) h(40.5) v(-20) N(216:element data type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="905 980 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="221" Label="224" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<Wire Id="222" Joints="N(221:Out) N(216:create if not found?)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="217" Bounds="853.5 960 0 0" Id="223" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="221" Bounds="905 980 0 0" Id="224" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>create if not found?</p.Text>
+			</NodeLabel>
+			<Wire Id="225" Joints="N(216:error out) h(135) v(-790) N(107:c6t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1750 510 40 15" DataItem="238" Id="239" Label="242" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@31275d5cf01048ae8c8c2fd3c56386c9" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="239" Bounds="1795 510 54 14" Id="242" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>RX.queue</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="478" Bounds="1608 465 0 0" Id="256" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>RX.queue</p.Text>
+			</NodeLabel>
+			<Wire Facade="WireInvisibleFacade" Id="258" Joints="N(478:Out) N(259:instance in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<PropertyNode Bounds="1620 465 103 170" HasErrorTerminals="False" Id="259" InstanceDataType="@31275d5cf01048ae8c8c2fd3c56386c9" Mode="InstanceProperties" Template="List">
+				<PropertyItemTerminal Action="Write" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Hotspot="0 15" Id="c0t0v" Path="eq" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@59d1bea90cf5435ea68a497abf441b4c" Hotspot="0 30" Id="c1t0v" Path="data" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Hotspot="0 45" Id="c2t0v" Path="qam" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Hotspot="0 60" Id="c3t0v" Path="samples" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Hotspot="0 75" Id="c4t0v" Path="sync" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Hotspot="0 90" Id="c5t0v" Path="pre" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Hotspot="0 105" Id="c6t0v" Path="CE" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Hotspot="0 120" Id="c7t0v" Path="pre debug" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Hotspot="0 135" Id="c8t0v" Path="CE debug" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Hotspot="0 150" Id="c9t0v" Path="qam debug" Usage="Required" />
+			</PropertyNode>
+			<Wire Id="262" Joints="N(259:instance out) h(22) v(45) N(239:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="264" Joints="N(24:queue out) h(10) v(35) N(259:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="265" Joints="N(51:queue out) h(5) v(-90) N(259:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="266" Joints="N(58:queue out) h(325) v(-165) N(259:c3t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="267" Joints="N(69:queue out) h(360) v(-235) N(259:c4t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="268" Joints="N(78:queue out) h(380) v(-295) N(259:c5t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="269" Joints="N(216:queue out) h(380) v(-395) N(259:c6t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="275" Joints="N(42:queue out) h(120) v(-585) N(208:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ObtainQueue Bounds="370 760 40 40" Id="393" />
+			<ObtainQueue Bounds="375 830 40 40" Id="395" />
+			<Literal Bounds="164.5 755 100 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="399" Label="400" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>tx.qam debug</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<NodeLabel AttachedTo="399" Bounds="164.5 755 0 0" Id="400" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<Wire Id="401" Joints="N(399:Out) h(5) v(5) N(393:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="88.5 830 121 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="402" Label="403" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>tx.samples debug</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<NodeLabel AttachedTo="402" Bounds="88.5 830 0 0" Id="403" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<Wire Id="404" Joints="N(402:Out) N(395:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="409" Joints="N(393:error out) h(78) v(-620) N(109:c3t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="410" Joints="N(395:error out) h(70) v(-680) N(109:c4t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="411" Joints="N(393:queue out) h(160) v(-645) N(208:c3t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="412" Joints="N(395:queue out) h(175) v(-700) N(208:c4t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ObtainQueue Bounds="950 1060 40 40" Id="418" />
+			<Literal Bounds="804.5 1060 95 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="419" Label="432" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>rx.pre debug</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<Wire Id="420" Joints="N(419:Out) N(418:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="799.5 1090 55 16" DataType="ComplexDouble" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="421" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x0;0x0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<Wire Id="422" Joints="N(421:Out) h(40.5) v(-20) N(418:element data type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="900 1080 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="423" Label="433" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<Wire Id="424" Joints="N(423:Out) N(418:create if not found?)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ObtainQueue Bounds="965 1175 40 40" Id="425" />
+			<Literal Bounds="825.5 1175 89 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="426" Label="434" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>rx.ce debug</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<Wire Id="427" Joints="N(426:Out) N(425:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="814.5 1205 55 16" DataType="ComplexDouble" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="428" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x0;0x0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<Wire Id="429" Joints="N(428:Out) h(40.5) v(-20) N(425:element data type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="915 1195 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="430" Label="435" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<Wire Id="431" Joints="N(430:Out) N(425:create if not found?)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="419" Bounds="804.5 1060 0 0" Id="432" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="423" Bounds="900 1080 0 0" Id="433" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>create if not found?</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="426" Bounds="825.5 1175 0 0" Id="434" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="430" Bounds="915 1195 0 0" Id="435" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>create if not found?</p.Text>
+			</NodeLabel>
+			<ObtainQueue Bounds="970 1300 40 40" Id="437" />
+			<Literal Bounds="818.5 1300 101 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="438" Label="444" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>rx.qam debug</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<Wire Id="439" Joints="N(438:Out) N(437:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="819.5 1330 55 16" DataType="ComplexDouble" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="440" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x0;0x0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<Wire Id="441" Joints="N(440:Out) h(40.5) v(-20) N(437:element data type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="920 1320 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="442" Label="445" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<Wire Id="443" Joints="N(442:Out) N(437:create if not found?)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="438" Bounds="818.5 1300 0 0" Id="444" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="442" Bounds="920 1320 0 0" Id="445" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>create if not found?</p.Text>
+			</NodeLabel>
+			<Wire Id="449" Joints="N(418:error out) h(170) v(-880) N(107:c7t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="450" Joints="N(425:error out) h(170) v(-985) N(107:c8t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="451" Joints="N(437:error out) h(195) v(-1100) N(107:c9t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="452" Joints="N(437:queue out) h(600) v(-690) N(259:c9t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="453" Joints="N(425:queue out) h(535) v(-580) N(259:c8t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="454" Joints="N(418:queue out) h(455) v(-480) N(259:c7t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ClusterLiteral Bounds="1608 465 12 10" DataType="@31275d5cf01048ae8c8c2fd3c56386c9" Facade="DockedConstantFacade" Id="478" Label="256" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0_0_0_0_0_0_0_0_0_0_</p.Data>
+				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+					<TypeDefinitionTarget TargetName="RX\.queue\.gtype" />
+				</p.TypeDefinitionTargets>
+				<ClusterBehavior AutoArrange="ArrangeVertically" />
+				<OpaqueRefnumLiteral Bounds="5 19 40 15" DataType="@59d1bea90cf5435ea68a497abf441b4c" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="479" Label="480">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="479" Bounds="5 2 25 14" Id="480" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>data</p.Text>
+				</NodeLabel>
+				<OpaqueRefnumLiteral Bounds="5 51 40 15" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="481" Label="482">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="481" Bounds="5 34 46 14" Id="482" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>samples</p.Text>
+				</NodeLabel>
+				<OpaqueRefnumLiteral Bounds="5 83 40 15" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="483" Label="484">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="483" Bounds="5 66 25 14" Id="484" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>qam</p.Text>
+				</NodeLabel>
+				<OpaqueRefnumLiteral Bounds="5 115 40 15" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="485" Label="486">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="485" Bounds="5 98 25 14" Id="486" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>sync</p.Text>
+				</NodeLabel>
+				<OpaqueRefnumLiteral Bounds="5 147 40 15" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="487" Label="488">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="487" Bounds="5 130 19 14" Id="488" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>pre</p.Text>
+				</NodeLabel>
+				<OpaqueRefnumLiteral Bounds="5 179 40 15" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="489" Label="490">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="489" Bounds="5 162 15 14" Id="490" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>CE</p.Text>
+				</NodeLabel>
+				<OpaqueRefnumLiteral Bounds="5 211 40 15" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="491" Label="492">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="491" Bounds="5 194 63 14" Id="492" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>qam debug</p.Text>
+				</NodeLabel>
+				<OpaqueRefnumLiteral Bounds="5 243 40 15" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="493" Label="494">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="493" Bounds="5 226 57 14" Id="494" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>pre debug</p.Text>
+				</NodeLabel>
+				<OpaqueRefnumLiteral Bounds="5 275 40 15" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="495" Label="496">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="495" Bounds="5 258 53 14" Id="496" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>CE debug</p.Text>
+				</NodeLabel>
+				<OpaqueRefnumLiteral Bounds="5 307 40 15" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="497" Label="498">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="497" Bounds="5 290 14 14" Id="498" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>eq</p.Text>
+				</NodeLabel>
+				<DockedConstantFacade UndockedSize="86 332" />
+			</ClusterLiteral>
+			<ObtainQueue Bounds="930 380 40 40" Id="500" />
+			<Literal Bounds="810 385 55 16" DataType="ComplexDouble" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="501" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x0;0x0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<Wire Id="502" Joints="N(501:Out) h(5) v(5) N(500:element data type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="787.5 325 52 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="503" Label="504" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>rx.eq</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<NodeLabel AttachedTo="503" Bounds="787.5 325 0 0" Id="504" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<Wire Id="505" Joints="N(503:Out) h(80.5) v(55) N(500:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="508" Joints="N(500:error out) h(310) v(-170) N(107:c10t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="509" Joints="N(500:queue out) h(630) v(95) N(259:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ClusterLiteral Bounds="147 35 107 204" DataType="@c79d711b66bd47fe995e2b6325a4eff6" Facade="NationalInstruments.MocCommon.SourceModel.IClusterBehavior" Id="525" Label="205" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0_0_0_0_0_0_</p.Data>
+				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+					<TypeDefinitionTarget TargetName="TX\.queue\.gtype" />
+				</p.TypeDefinitionTargets>
+				<ClusterBehavior AutoArrange="ArrangeVertically" />
+				<OpaqueRefnumLiteral Bounds="5 19 40 15" DataType="@59d1bea90cf5435ea68a497abf441b4c" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="526" Label="527">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="526" Bounds="5 2 25 14" Id="527" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>data</p.Text>
+				</NodeLabel>
+				<OpaqueRefnumLiteral Bounds="5 51 40 15" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="528" Label="529">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="528" Bounds="5 34 25 14" Id="529" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>qam</p.Text>
+				</NodeLabel>
+				<OpaqueRefnumLiteral Bounds="5 83 40 15" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="530" Label="531">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="530" Bounds="5 66 46 14" Id="531" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>samples</p.Text>
+				</NodeLabel>
+				<OpaqueRefnumLiteral Bounds="5 115 40 15" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="532" Label="533">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="532" Bounds="5 98 63 14" Id="533" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>qam debug</p.Text>
+				</NodeLabel>
+				<OpaqueRefnumLiteral Bounds="5 147 40 15" DataType="@89d7ff4ab672446c8cd747ebcd565f16" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="534" Label="535">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="534" Bounds="5 130 84 14" Id="535" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>samples debug</p.Text>
+				</NodeLabel>
+				<OpaqueRefnumLiteral Bounds="5 179 40 15" DataType="@59d1bea90cf5435ea68a497abf441b4c" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="536" Label="537">
+					<p.Data>0</p.Data>
+					<OpaqueRefnumLiteralBehavior />
+				</OpaqueRefnumLiteral>
+				<NodeLabel AttachedTo="536" Bounds="5 162 63 14" Id="537" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>data debug</p.Text>
+				</NodeLabel>
+			</ClusterLiteral>
+			<ObtainQueue Bounds="345 390 40 40" Id="539" />
+			<Literal Bounds="173.5 390 101 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="540" Label="541" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>tx.data debug</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<NodeLabel AttachedTo="540" Bounds="173.5 390 0 0" Id="541" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<Wire Id="542" Joints="N(540:Out) N(539:name)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="545" Joints="N(539:queue out) h(355) v(-245) N(208:c5t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@c79d711b66bd47fe995e2b6325a4eff6" Height="[float]307" Id="546" Label="[UIModel]559" Left="[float]308" Top="[float]69" Value="{DataItemBinding Id=193}" Width="[float]149" p4:ControlDefinitionChecksum="mxmux3hjP2DPeH147KpNWA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="TX\.queue\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="547" Label="[UIModel]548" Left="[float]40" RefnumType="[Type]@59d1bea90cf5435ea68a497abf441b4c" Top="[float]30" Value="{ClusterBinding FieldName=data}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="548" LabelOwner="[UIModel]547" Left="[float]40" Text="[string]data" Top="[float]7" Width="[float]24" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="549" Label="[UIModel]550" Left="[float]42" RefnumType="[Type]@89d7ff4ab672446c8cd747ebcd565f16" Top="[float]83" Value="{ClusterBinding FieldName=qam}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="550" LabelOwner="[UIModel]549" Left="[float]42" Text="[string]qam" Top="[float]60" Width="[float]24" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="551" Label="[UIModel]552" Left="[float]46" RefnumType="[Type]@89d7ff4ab672446c8cd747ebcd565f16" Top="[float]139" Value="{ClusterBinding FieldName=samples}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="552" LabelOwner="[UIModel]551" Left="[float]46" Text="[string]samples" Top="[float]116" Width="[float]43" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="553" Label="[UIModel]555" Left="[float]50" RefnumType="[Type]@89d7ff4ab672446c8cd747ebcd565f16" Top="[float]192" Value="{ClusterBinding FieldName=qam\ debug}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="554" Label="[UIModel]556" Left="[float]53" RefnumType="[Type]@89d7ff4ab672446c8cd747ebcd565f16" Top="[float]246" Value="{ClusterBinding FieldName=samples\ debug}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="555" LabelOwner="[UIModel]553" Left="[float]50" Text="[string]qam debug" Top="[float]169" Width="[float]62" />
+				<p4:Label Height="[float]16" Id="556" LabelOwner="[UIModel]554" Left="[float]53" Text="[string]samples debug" Top="[float]223" Width="[float]81" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="557" Label="[UIModel]558" Left="[float]92" RefnumType="[Type]@59d1bea90cf5435ea68a497abf441b4c" Top="[float]271" Value="{ClusterBinding FieldName=data\ debug}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="558" LabelOwner="[UIModel]557" Left="[float]92" Text="[string]data debug" Top="[float]248" Width="[float]61" />
+			</Cluster>
+			<Label Height="[float]16" Id="559" LabelOwner="[UIModel]546" Left="[float]308" Text="[string]TX.queue" Top="[float]46" Width="[float]50" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@31275d5cf01048ae8c8c2fd3c56386c9" Height="[float]632" Id="455" Label="[UIModel]476" Left="[float]544" Top="[float]119" Value="{DataItemBinding Id=238}" Width="[float]104" p4:ControlDefinitionChecksum="rAhVD9T+Pv0GZm2Ez9tm7A==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="RX\.queue\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="456" Label="[UIModel]457" Left="[float]17" RefnumType="[Type]@59d1bea90cf5435ea68a497abf441b4c" Top="[float]30" Value="{ClusterBinding FieldName=data}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="457" LabelOwner="[UIModel]456" Left="[float]17" Text="[string]data" Top="[float]7" Width="[float]24" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="458" Label="[UIModel]463" Left="[float]32" RefnumType="[Type]@89d7ff4ab672446c8cd747ebcd565f16" Top="[float]138" Value="{ClusterBinding FieldName=samples}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="459" Label="[UIModel]464" Left="[float]29" RefnumType="[Type]@89d7ff4ab672446c8cd747ebcd565f16" Top="[float]91" Value="{ClusterBinding FieldName=qam}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="460" Label="[UIModel]465" Left="[float]32" RefnumType="[Type]@89d7ff4ab672446c8cd747ebcd565f16" Top="[float]204" Value="{ClusterBinding FieldName=sync}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="461" Label="[UIModel]466" Left="[float]34" RefnumType="[Type]@89d7ff4ab672446c8cd747ebcd565f16" Top="[float]256" Value="{ClusterBinding FieldName=pre}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="462" Label="[UIModel]467" Left="[float]37" RefnumType="[Type]@89d7ff4ab672446c8cd747ebcd565f16" Top="[float]301" Value="{ClusterBinding FieldName=CE}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="463" LabelOwner="[UIModel]458" Left="[float]32" Text="[string]samples" Top="[float]115" Width="[float]43" />
+				<p4:Label Height="[float]16" Id="464" LabelOwner="[UIModel]459" Left="[float]29" Text="[string]qam" Top="[float]68" Width="[float]24" />
+				<p4:Label Height="[float]16" Id="465" LabelOwner="[UIModel]460" Left="[float]32" Text="[string]sync" Top="[float]181" Width="[float]24" />
+				<p4:Label Height="[float]16" Id="466" LabelOwner="[UIModel]461" Left="[float]34" Text="[string]pre" Top="[float]233" Width="[float]18" />
+				<p4:Label Height="[float]16" Id="467" LabelOwner="[UIModel]462" Left="[float]37" Text="[string]CE" Top="[float]278" Width="[float]14" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="468" Label="[UIModel]471" Left="[float]48" RefnumType="[Type]@89d7ff4ab672446c8cd747ebcd565f16" Top="[float]350" Value="{ClusterBinding FieldName=qam\ debug}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="469" Label="[UIModel]472" Left="[float]36" RefnumType="[Type]@89d7ff4ab672446c8cd747ebcd565f16" Top="[float]406" Value="{ClusterBinding FieldName=pre\ debug}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="470" Label="[UIModel]473" Left="[float]38" RefnumType="[Type]@89d7ff4ab672446c8cd747ebcd565f16" Top="[float]448" Value="{ClusterBinding FieldName=CE\ debug}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="471" LabelOwner="[UIModel]468" Left="[float]48" Text="[string]qam debug" Top="[float]327" Width="[float]62" />
+				<p4:Label Height="[float]16" Id="472" LabelOwner="[UIModel]469" Left="[float]36" Text="[string]pre debug" Top="[float]383" Width="[float]56" />
+				<p4:Label Height="[float]16" Id="473" LabelOwner="[UIModel]470" Left="[float]38" Text="[string]CE debug" Top="[float]425" Width="[float]52" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="474" Label="[UIModel]475" Left="[float]30" RefnumType="[Type]@89d7ff4ab672446c8cd747ebcd565f16" Top="[float]172" Value="{ClusterBinding FieldName=eq}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="475" LabelOwner="[UIModel]474" Left="[float]30" Text="[string]eq" Top="[float]149" Width="[float]14" />
+			</Cluster>
+			<Label Height="[float]16" Id="476" LabelOwner="[UIModel]455" Left="[float]544" Text="[string]RX.queue" Top="[float]96" Width="[float]51" xmlns="http://www.ni.com/PanelCommon" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="0" DataType="Error" Id="87" Name="error in" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Error\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="0" DataType="Error" Id="129" Name="error out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Error\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="@c79d711b66bd47fe995e2b6325a4eff6" Id="193" Name="TX.queue" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0_0_0_0_0_0_</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="TX\.queue\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="2" DataType="@31275d5cf01048ae8c8c2fd3c56386c9" Id="238" Name="RX.queue" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0_0_0_0_0_0_0_0_0_0_</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="RX\.queue\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="c79d711b66bd47fe995e2b6325a4eff6">
+			<Typedef TypedefName="TX.queue.gtype" UnderlyingType="@f3b4105398404d50b267b89e0b59316a" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="59d1bea90cf5435ea68a497abf441b4c">
+			<Attributed>
+				<AttributedType>
+					<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.Queue" ReferenceClass="">
+						<GenericTypeDefinition>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="NationalInstruments.SourceModel.DataTypes.Queue" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Composite RefId="2" />
+										</GenericTypeDefinition>
+										<GenericParameters>
+											<Typedef TypedefName="DataType" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+										</GenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</GenericTypeDefinition>
+						<ClosedGenericParameters>
+							<UInt8 />
+						</ClosedGenericParameters>
+						<BaseType>
+							<Void />
+						</BaseType>
+					</Composite>
+				</AttributedType>
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="89d7ff4ab672446c8cd747ebcd565f16">
+			<Attributed>
+				<AttributedType>
+					<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.Queue" ReferenceClass="">
+						<GenericTypeDefinition>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="NationalInstruments.SourceModel.DataTypes.Queue" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Composite RefId="2" />
+										</GenericTypeDefinition>
+										<GenericParameters>
+											<Typedef TypedefName="DataType" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+										</GenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</GenericTypeDefinition>
+						<ClosedGenericParameters>
+							<ComplexDouble />
+						</ClosedGenericParameters>
+						<BaseType>
+							<Void />
+						</BaseType>
+					</Composite>
+				</AttributedType>
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="31275d5cf01048ae8c8c2fd3c56386c9">
+			<Typedef TypedefName="RX.queue.gtype" UnderlyingType="@f9ecd92a4ec64b63b96049acf784b917" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="f3b4105398404d50b267b89e0b59316a">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="data">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="NationalInstruments.SourceModel.DataTypes.Queue" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Attributed>
+												<AttributedType>
+													<Composite Id="3" Name="NationalInstruments.SourceModel.DataTypes.Queue" ReferenceClass="">
+														<GenericTypeDefinition>
+															<Composite RefId="3" />
+														</GenericTypeDefinition>
+														<GenericParameters>
+															<Typedef TypedefName="DataType" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</GenericParameters>
+														<BaseType>
+															<Void />
+														</BaseType>
+													</Composite>
+												</AttributedType>
+												<AttributeValues>
+													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+												</AttributeValues>
+											</Attributed>
+										</GenericTypeDefinition>
+										<ClosedGenericParameters>
+											<UInt8 />
+										</ClosedGenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="qam">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="4" Name="NationalInstruments.SourceModel.DataTypes.Queue" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Attributed>
+												<AttributedType>
+													<Composite RefId="3" />
+												</AttributedType>
+												<AttributeValues>
+													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+												</AttributeValues>
+											</Attributed>
+										</GenericTypeDefinition>
+										<ClosedGenericParameters>
+											<ComplexDouble />
+										</ClosedGenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="samples">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="4" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="qam debug">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="4" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="samples debug">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="4" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="data debug">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="afa95de9248f4d0a921501886d19191e">
+			<Generic />
+		</p.TypeReference>
+		<p.TypeReference TypeId="f9ecd92a4ec64b63b96049acf784b917">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="data">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="NationalInstruments.SourceModel.DataTypes.Queue" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Attributed>
+												<AttributedType>
+													<Composite Id="3" Name="NationalInstruments.SourceModel.DataTypes.Queue" ReferenceClass="">
+														<GenericTypeDefinition>
+															<Composite RefId="3" />
+														</GenericTypeDefinition>
+														<GenericParameters>
+															<Typedef TypedefName="DataType" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</GenericParameters>
+														<BaseType>
+															<Void />
+														</BaseType>
+													</Composite>
+												</AttributedType>
+												<AttributeValues>
+													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+												</AttributeValues>
+											</Attributed>
+										</GenericTypeDefinition>
+										<ClosedGenericParameters>
+											<UInt8 />
+										</ClosedGenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="samples">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="4" Name="NationalInstruments.SourceModel.DataTypes.Queue" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Attributed>
+												<AttributedType>
+													<Composite RefId="3" />
+												</AttributedType>
+												<AttributeValues>
+													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+												</AttributeValues>
+											</Attributed>
+										</GenericTypeDefinition>
+										<ClosedGenericParameters>
+											<ComplexDouble />
+										</ClosedGenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="qam">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="4" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="sync">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="4" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="pre">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="4" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="CE">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="4" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="qam debug">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="4" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="pre debug">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="4" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="CE debug">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="4" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="eq">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="4" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
