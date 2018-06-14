@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="55E13B047D9E43A28B77E822ADBF440A" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="5C79124BCC0F439A1342C6237AA32EA0" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -71,15 +71,15 @@
 				<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="65" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ComplexDouble]1 + 0i" Left="[float]0" MinHeight="[float]22" Name="[string]Child" Top="[float]0" ValueFormatter="[string]LV:G6" ValueType="[Type]ComplexDouble" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
-			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="73" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]22" Name="[string]mse" Top="[float]0" Value="{DataItemBinding Id=70}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="73" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]22" Name="[string]Nmse" Top="[float]0" Value="{DataItemBinding Id=70}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="79" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]22" Name="[string]n_error" Top="[float]0" Value="{DataItemBinding Id=76}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="13">
-			<MathNode Bounds="470 235 290 185" DocumentText="&quot;N = min(numel(x), numel(xe));\r\ndiff = abs(x(1:N)-xe(1:N)).^2;\r\n\r\nmse = sum(diff)/N;\r\n\r\nerr = ( diff&gt; 10^(-12));\r\n\r\nn_error = sum(err);&quot;" Id="15" OutliningMode="Manual" xmlns="http://www.ni.com/MScript">
-				<MVariable ArrayFormat="ColBased" Bounds="-25 55 45 15" DataType="ComplexDouble[]" Direction="Input" Facade="" Hotspot="-25 60" Id="1" IsTypeFixed="True" Name="x" Usage="Required" />
-				<MVariable ArrayFormat="ColBased" Bounds="-25 85 45 15" DataType="ComplexDouble[]" Direction="Input" Facade="" Hotspot="-25 90" Id="2" IsTypeFixed="True" Name="xe" Usage="Required" />
-				<MVariable Bounds="270 55 55 15" DataType="Double" Direction="Output" Facade="" Hotspot="325 60" Id="3" IsTypeFixed="True" Name="mse" Usage="Optional" />
-				<MVariable Bounds="270 80 75 15" DataType="Double" Direction="Output" Facade="" Hotspot="345 85" Id="5" IsTypeFixed="True" Name="n_error" Usage="Optional" />
+			<MathNode Bounds="470 235 290 185" DocumentText="&quot;N = min(numel(x), numel(xe));\r\ndiff = abs(x(1:N)-xe(1:N)).^2;\r\n\r\nmse = sum(diff)/sum( abs(x(1:N)).^2);\r\n\r\nerr = ( diff&gt; 10^(-12));\r\n\r\nn_error = sum(err);&quot;" Id="15" OutliningMode="Manual" xmlns="http://www.ni.com/MScript">
+				<MVariable ArrayFormat="ColBased" Bounds="-25 55 45 15" DataType="ComplexDouble[]" Direction="Input" Hotspot="-25 60" Id="1" IsTypeFixed="True" Name="x" Usage="Required" />
+				<MVariable ArrayFormat="ColBased" Bounds="-25 85 45 15" DataType="ComplexDouble[]" Direction="Input" Hotspot="-25 90" Id="2" IsTypeFixed="True" Name="xe" Usage="Required" />
+				<MVariable Bounds="270 55 55 15" DataType="Double" Direction="Output" Hotspot="325 60" Id="3" IsTypeFixed="True" Name="mse" Usage="Optional" />
+				<MVariable Bounds="270 80 75 15" DataType="Double" Direction="Output" Hotspot="345 85" Id="5" IsTypeFixed="True" Name="n_error" Usage="Optional" />
 			</MathNode>
 			<DataAccessor Bounds="250 240 40 15" DataItem="16" Id="26" Label="27" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -112,8 +112,8 @@
 			<DataAccessor Bounds="900 290 40 15" DataItem="70" Id="72" Label="74" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="72" Bounds="945 290 23 14" Id="74" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>mse</p.Text>
+			<NodeLabel AttachedTo="72" Bounds="945 290 32 14" Id="74" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Nmse</p.Text>
 			</NodeLabel>
 			<DataAccessor Bounds="900 315 40 15" DataItem="76" Id="78" Label="80" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -155,7 +155,7 @@
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" DataType="ComplexDouble[]" Id="62" Name="xe" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="Double" Id="70" Name="mse" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="Double" Id="70" Name="Nmse" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="2" DataType="Double" Id="76" Name="n_error" xmlns="http://www.ni.com/MocCommon">
